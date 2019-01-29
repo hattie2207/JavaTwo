@@ -1,0 +1,7 @@
+package InterfaceTask;
+
+public class One implements Bank {
+	
+	
+
+}

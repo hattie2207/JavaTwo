@@ -1,0 +1,9 @@
+package inheritanceTask;
+
+public class One {
+	
+	public void message() {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package inheritanceTask;
+
+public class Two extends One{
+		
+	public void go() {
+		
+		
+	}
+
+}

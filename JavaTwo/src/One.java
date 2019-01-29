@@ -2,7 +2,7 @@
 public class One {
 	
 	int a;
-	int b; 
+	private int b; 
 	
 	public void message() {
 		a++;

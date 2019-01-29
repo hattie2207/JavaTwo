@@ -1,0 +1,19 @@
+package inheritanceTask;
+
+public class Two extends One{
+		
+	public void go() {
+		
+		System.out.println("ABC");
+	}
+	
+	public static void main(String[] args) {
+		
+		//
+		One reference = new Two();
+		reference.message();
+		reference.go();
+		
+	}
+
+}
