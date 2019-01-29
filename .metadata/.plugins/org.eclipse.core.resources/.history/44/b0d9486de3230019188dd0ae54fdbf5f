@@ -2,7 +2,7 @@ package drawing;
 
 public class Draw {
 	
-	//force other classes (Circle and Line) to extends from Drawing class
+	//force other class to extends from Drawing class
 	public static void drawSomething(Drawing reference) {
 		
 		reference.doDrawing();
