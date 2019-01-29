@@ -13,7 +13,7 @@ public class Two extends One{
 		//You can also call inherited method from parent but you can't call the child method
 		One reference = new Two();		
 		reference.message();
-		reference.go();
+//		reference.go();
 		
 	}
 

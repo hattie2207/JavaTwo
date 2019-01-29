@@ -1,0 +1,19 @@
+package singleton;
+
+public class MainMath {
+	
+	public static void main(String[] args) {
+		 
+		Math a,b,c;
+		
+		a = Math.createObject();
+		b = Math.createObject();
+		c = Math.createObject();
+		
+		a.setA(3);
+		System.out.println(c.getA());
+		
+		
+	}
+
+}

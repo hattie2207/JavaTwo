@@ -1,0 +1,9 @@
+package singleton;
+
+public class Math {
+	
+	static Math x;
+	private Math();
+	
+
+}

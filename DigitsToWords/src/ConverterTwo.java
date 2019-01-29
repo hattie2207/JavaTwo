@@ -9,6 +9,7 @@ public class ConverterTwo {
 	public String DigitsToWords(int digits) {				
 
 		String message = ""; 
+		if (digits == 0) message += "Zero";
 		
 		if (digits >= 1000 && digits < 10000) {
 			message += digitOne[digits/1000] + " Thousand ";

@@ -1,0 +1,10 @@
+package staticTask;
+
+public class Bank {
+	
+	static int dollar;
+	static {
+		dollar = 95;
+	}
+
+}

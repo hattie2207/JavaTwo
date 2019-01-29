@@ -1,0 +1,8 @@
+package staticTask;
+
+public class MainBank {
+	
+	Bank hsbc = new Bank();
+	
+
+}

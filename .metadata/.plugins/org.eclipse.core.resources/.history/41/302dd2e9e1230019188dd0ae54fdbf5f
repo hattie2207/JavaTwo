@@ -1,0 +1,15 @@
+package staticTask;
+
+public class MainBank {
+	
+	
+	public static void main(String[] args) {
+		
+		Bank hsbc = new Bank();
+		
+	}
+	
+
+	
+
+}

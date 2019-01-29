@@ -1,0 +1,9 @@
+package thisTask;
+
+public class MainWhat {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

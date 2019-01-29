@@ -1,0 +1,19 @@
+package thisTask;
+
+public class What {
+	
+	int x;
+	public void one() {
+		int x;
+		x = 15;
+		this.x = 25; 
+		//increment local variable 
+		System.out.println(++x);
+		
+	}
+	
+	public void show() {
+		System.out.println(x);
+	}
+
+}

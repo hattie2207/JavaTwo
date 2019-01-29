@@ -1,0 +1,13 @@
+package thisTask;
+
+public class What {
+	
+	int x;
+	public void One() {
+		int x;
+		x = 15;
+		this.x = 25;
+		System.out.println(++x);
+	}
+
+}

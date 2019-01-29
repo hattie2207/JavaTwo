@@ -1,0 +1,10 @@
+package thisTask;
+
+public class What {
+	
+	int x;
+	public void One() {
+		
+	}
+
+}

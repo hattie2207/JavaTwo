@@ -1,0 +1,21 @@
+package singleton;
+
+public class Math {
+	
+	static Math x;
+	private Math() {
+		
+		int a = 1; 
+		System.out.println(a);
+	}
+	
+	public static Math createObject() {
+		
+		if (x == null) {
+			x = new Math();
+		}
+		
+		return x;
+	}
+
+}
