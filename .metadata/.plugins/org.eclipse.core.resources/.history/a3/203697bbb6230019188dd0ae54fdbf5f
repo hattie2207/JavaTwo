@@ -1,0 +1,43 @@
+
+public class ConverterTwo {
+	
+	String digitOne[] = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", 
+			"Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Ninteen"};
+	String digitTwo[] = {"", "", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninty"};
+	
+	
+	public String DigitsToWords(int digits) {				
+
+		String message = ""; 
+		
+		if (digits >= 1000 && digits < 10000) {
+			message += digitOne[digits/1000] + " Thousand ";
+			digits = digits % 1000;
+		}
+		if (digits >= 100) {
+			message += digitOne[digits/100] + " Hundred And ";
+			digits = digits % 100;
+		}
+		if(digits >= 20) {
+			message += digitTwo[digits/10] + " ";
+			digits = digits % 10;
+		}
+		if (digits < 20) {
+			message += digitOne[digits];
+		}
+	
+
+		return message; 
+
+	}
+
+	public static void main(String[] args) {
+	
+		ConverterTwo c = new ConverterTwo();
+		String outputMessage = c.DigitsToWords(112);
+
+		System.out.println(outputMessage);
+
+	}
+
+}

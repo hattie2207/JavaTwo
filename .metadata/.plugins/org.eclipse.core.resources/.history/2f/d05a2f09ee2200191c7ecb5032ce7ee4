@@ -1,0 +1,12 @@
+
+public class Results {
+	
+	private int physics, chemistry;
+	
+	public void showResults() {
+		int total, percentage; 
+		total = physics + chemistry;
+		
+	}
+
+}

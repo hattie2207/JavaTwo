@@ -1,0 +1,60 @@
+
+public class Results {
+
+	private int physics, chemistry;
+	boolean errorInput; 
+
+	public void setPhysics(int physics) {
+		
+		System.out.println(this.physics);
+
+		if (this.physics >= 0 && this.physics <= 150) {
+			this.physics = physics;
+		}
+		else {
+			System.out.println("Invalid physics mark");
+			errorInput = true; 
+
+		}
+	}
+
+	public void setChemistry(int chemistry) {
+
+		if (this.chemistry >= 0 && this.chemistry <= 150) {
+			this.chemistry = chemistry;
+		}
+		else {
+			System.out.println("Invalid chemistry mark");
+			errorInput = true; 
+
+		}
+	}
+	
+	public void showResults() {
+
+		if (errorInput == false) {
+			int total, percentage; 
+			total = physics + chemistry;
+			percentage = (total * 100) / 300;
+			System.out.println("Total Marks: " + total);
+			System.out.println("Percentage: " + percentage);
+		}
+		else {
+			System.out.println("Cannot show results with invalid marks");
+		}
+
+	}
+	
+	public static void main(String[] args) {
+		
+		Results peter = new Results();
+		peter.setPhysics(900);
+		peter.setChemistry(70);
+		peter.showResults();
+		
+	}
+
+
+
+
+}

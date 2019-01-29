@@ -1,0 +1,112 @@
+
+public class Converter {
+
+	String digitsWord = "";
+	int digitsCount;
+	String message = ""; 
+
+	public void countDigits(int digits) {		
+
+		digitsWord = Integer.toString(digits);
+		digitsCount = digitsWord.length();
+
+	}
+	
+	public void
+
+	public String DigitsToWords(int digits) {
+
+		
+
+		if (digitsCount == 1) {
+
+			for (int i = 0; i < digitsWord.length(); i++){
+
+				char c = digitsWord.charAt(i);
+				switch (c) {
+
+				case '1': 
+					message += "One";
+					break;
+				case '2':
+					message += "Two";
+					break;
+				case '3': 
+					message += "Three";
+					break;
+				case '4': 
+					message += "Four";
+					break;
+				case '5': 
+					message += "Five";
+					break;
+				case '6': 
+					message += "Six";
+					break;
+				case '7': 
+					message += "Seven";
+					break;
+				case '8': 
+					message += "Eight";
+					break;
+				case '9': 
+					message += "Nine";
+					break;
+				case '0':
+					message += "Zero";
+					break;
+
+				}
+
+			}
+		}
+
+		if (digitsWord.length() == 2 && message ==  "") {
+			message += "Twenty";
+		}
+
+//		switch (c) {
+//
+//		case '1': 
+//			message += "One";
+//			break;
+//		case '2':
+//			message += "Two";
+//			break;
+//		case '3': 
+//			message += "Three";
+//			break;
+//		case '4': 
+//			message += "Four";
+//			break;
+//		case '5': 
+//			message += "Five";
+//			break;
+//		case '6': 
+//			message += "Six";
+//			break;
+//		case '7': 
+//			message += "Seven";
+//			break;
+//		case '8': 
+//			message += "Eight";
+//			break;
+//		case '9': 
+//			message += "Nine";
+//			break;
+//
+//		}
+
+		return message; 
+
+	}
+
+	public static void main(String[] args) {
+
+		Converter c = new Converter();
+		String outputMessage = c.DigitsToWords(11);
+
+		System.out.println(outputMessage);
+	}		
+
+}

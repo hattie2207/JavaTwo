@@ -1,0 +1,40 @@
+
+public class ConverterTwo {
+	
+	public String DigitsToWords(int digits) {		
+		
+		
+
+		String message = ""; 
+		
+		if (digits >= 1000 && digits < 10000) {
+			message += digitOne(digits/1000) + " Thousand ";
+			digits = digits % 1000;
+		}
+		if (digits >= 100) {
+			message += digitOne(digits/100) + " Hundred And ";
+			digits = digits % 100;
+		}
+		if(digits >= 20) {
+			message += digitTWo(digits/10) + " ";
+			digits = digits % 10;
+		}
+		if (digits < 20) {
+			message += digitOne(digits);
+		}
+	
+
+		return message; 
+
+	}
+
+	public static void main(String[] args) {
+	
+		ConverterTwo c = new ConverterTwo();
+		String outputMessage = c.DigitsToWords(112);
+
+		System.out.println(outputMessage);
+
+	}
+
+}

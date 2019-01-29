@@ -1,0 +1,59 @@
+
+public class Converter {
+	
+	public String DigitsToWords(int digits) {
+		
+		String message = ""; 
+		String digitsWord = "";
+		
+		if (digits == 0) {
+			message += "Zero";
+		}
+		
+		digitsWord = Integer.toString(digits);
+		
+		if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else if (digitsWord.contains("1")) {
+			message += "One";
+		}
+		else {
+			
+		}
+		
+		
+		return digitsWord; 
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Converter c = new Converter();
+		String outputMessage = c.DigitsToWords(23);
+		
+		System.out.println(outputMessage);
+	}
+
+}

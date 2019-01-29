@@ -1,0 +1,15 @@
+
+public class Results {
+	
+	private int physics, chemistry;
+	
+	public void showResults() {
+		int total, percentage; 
+		total = physics + chemistry;
+		percentage = (total * 100) / 300;
+		System.out.println("Total Marks: " + total);
+		System.out.println("Percentage: " + percentage);
+		
+	}
+
+}

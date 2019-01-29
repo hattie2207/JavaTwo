@@ -1,0 +1,12 @@
+
+public class Converter {
+	
+	public String DigitsToWords(int digits) {
+		
+		
+		
+		return ""; 
+		
+	}
+
+}

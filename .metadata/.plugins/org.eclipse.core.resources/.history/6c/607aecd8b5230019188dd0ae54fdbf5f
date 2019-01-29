@@ -1,0 +1,13 @@
+
+public class ConverterTwo {
+
+	public static void main(String[] args) {
+	
+		ConverterTwo c = new ConverterTwo();
+		String outputMessage = c.DigitsToWords(112);
+
+		System.out.println(outputMessage);
+
+	}
+
+}

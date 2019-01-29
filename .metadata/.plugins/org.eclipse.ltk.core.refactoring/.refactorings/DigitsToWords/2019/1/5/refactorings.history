@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;DigitsToWords&apos; to &apos;Converter&apos;&#x0D;&#x0A;- Original project: &apos;DigitsToWords&apos;&#x0D;&#x0A;- Original element: &apos;DigitsToWords&apos;&#x0D;&#x0A;- Renamed element: &apos;Converter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DigitsToWords&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{DigitsToWords.java[DigitsToWords" matchStrategy="1" name="Converter" qualified="false" references="true" similarDeclarations="false" stamp="1548752696936" textual="false" version="1.0"/>
+</session>

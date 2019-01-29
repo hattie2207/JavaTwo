@@ -1,0 +1,149 @@
+
+public class Converter {
+
+	String digitsWord = "";
+	int digitsCount;
+
+	public void countDigits(int digits) {		
+
+		digitsWord = Integer.toString(digits);
+		digitsCount = digitsWord.length();
+
+	}
+
+	public String DigitsToWords(int digits) {
+
+		String message = ""; 
+
+		if (digitsCount == 1) {
+
+			for (int i = 0; i < digitsWord.length(); i++){
+
+				char c = digitsWord.charAt(i);
+				switch (c) {
+
+				case '1': 
+					message += "One";
+					break;
+				case '2':
+					message += "Two";
+					break;
+				case '3': 
+					message += "Three";
+					break;
+				case '4': 
+					message += "Four";
+					break;
+				case '5': 
+					message += "Five";
+					break;
+				case '6': 
+					message += "Six";
+					break;
+				case '7': 
+					message += "Seven";
+					break;
+				case '8': 
+					message += "Eight";
+					break;
+				case '9': 
+					message += "Nine";
+					break;
+				case '0':
+					
+
+				}
+
+			}
+		}
+
+
+		if (digits == 0) {
+			message += "Zero";
+		}		
+
+
+
+		if (digitsWord.length() == 2 && message ==  "") {
+			message += "Twenty";
+		}
+
+		switch (c) {
+
+		case '1': 
+			message += "One";
+			break;
+		case '2':
+			message += "Two";
+			break;
+		case '3': 
+			message += "Three";
+			break;
+		case '4': 
+			message += "Four";
+			break;
+		case '5': 
+			message += "Five";
+			break;
+		case '6': 
+			message += "Six";
+			break;
+		case '7': 
+			message += "Seven";
+			break;
+		case '8': 
+			message += "Eight";
+			break;
+		case '9': 
+			message += "Nine";
+			break;
+
+		}
+
+	}			
+
+	return message; 
+
+}
+
+public static void main(String[] args) {
+
+	Converter c = new Converter();
+	String outputMessage = c.DigitsToWords(11);
+
+	System.out.println(outputMessage);
+}
+
+
+//			if (digitsWord.contains("1")) {
+//				message += "One";
+//			}
+//			else if (digitsWord.contains("2")) {
+//				message += "Two";
+//			}
+//			else if (digitsWord.contains("3")) {
+//				message += "Three";
+//			}
+//			else if (digitsWord.contains("4")) {
+//				message += "Four";
+//			}
+//			else if (digitsWord.contains("5")) {
+//				message += "Five";
+//			}
+//			else if (digitsWord.contains("6")) {
+//				message += "Six";
+//			}
+//			else if (digitsWord.contains("7")) {
+//				message += "Seven";
+//			}
+//			else if (digitsWord.contains("8")) {
+//				message += "Eight";
+//			}
+//			else if (digitsWord.contains("9")) {
+//				message += "Nine";
+//			}
+//			else {
+//				
+//			}				
+
+}

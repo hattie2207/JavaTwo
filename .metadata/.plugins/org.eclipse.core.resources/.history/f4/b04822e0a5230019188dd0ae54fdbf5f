@@ -1,0 +1,30 @@
+
+public class Converter {
+	
+	public String DigitsToWords(int digits) {
+		
+		String message = ""; 
+		String digitsWord = "";
+		
+		if (digits == 0) {
+			message = "Zero";
+		}
+		
+		digitsWord = Integer.toString(digits);
+		
+		
+		
+		
+		return digitsWord; 
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Converter c = new Converter();
+		String outputMessage = c.DigitsToWords(23);
+		
+		System.out.println(outputMessage);
+	}
+
+}

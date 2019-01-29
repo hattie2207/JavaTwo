@@ -1,0 +1,10 @@
+
+public class Results {
+	
+	private int phy, che;
+	
+	public void showResults() {
+		
+	}
+
+}
