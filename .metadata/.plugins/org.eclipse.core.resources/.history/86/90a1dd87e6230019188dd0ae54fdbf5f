@@ -1,0 +1,20 @@
+package drawing;
+
+public class Draw {
+	
+	//force other classes (Circle and Line) to extends from Drawing class
+	public static void drawSomething(Drawing reference) {
+		
+		reference.doDrawing();
+	}
+
+	public static void main(String[] args) {
+	
+		Circle c = new Circle();
+		Line l = new Line();
+		
+		drawSomething(c);
+		drawSomething(l);
+		
+	}
+}
