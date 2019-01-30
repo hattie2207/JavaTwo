@@ -1,0 +1,16 @@
+package guiTask;
+
+import java.awt.Frame;
+
+public class GUIMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f = new Frame();
+		Button b1 = new Button();
+		Button b2 = new Button();
+		f.setSize(400, 400);
+		f.setVisible(true);
+	}
+
+}

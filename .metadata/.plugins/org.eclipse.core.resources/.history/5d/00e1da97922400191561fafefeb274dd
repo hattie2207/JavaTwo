@@ -1,0 +1,19 @@
+package guiTask;
+
+import java.awt.Button;
+import java.awt.Frame;
+
+public class GUIMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f = new Frame("QA Learning Academy");
+		Button b1 = new Button("Click 1");
+		Button b2 = new Button("Click 2");
+		f.add(b1);
+		f.add(b2);
+		f.setSize(400, 400);
+		f.setVisible(true);
+	}
+
+}

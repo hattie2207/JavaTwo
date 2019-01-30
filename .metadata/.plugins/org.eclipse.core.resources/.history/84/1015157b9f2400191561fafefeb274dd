@@ -1,0 +1,104 @@
+package stringTask;
+
+public class English {
+
+	public static void printOne(String message) {
+
+		String[] splited = message.split("\\s+");
+
+		for (int i = splited.length - 1; i >= 0;  i--) {
+
+			System.out.println(splited[i]);
+
+		}
+
+	}
+
+	public static void find(String find, String message) {
+
+		int count = 0;	
+		String[] splited = message.split("\\s+");
+
+		for (int i = 0; i < splited.length;  i++) {
+
+			if(splited[i].equals(find)) {
+				count++;
+			}
+		}
+
+		System.out.println( "The word \"" + find + "\" occurs " + count + " times");
+	}
+
+	public static void findChar(String find, String message) {
+
+		int count = 0;	
+//		char[] messageChar = message.toCharArray();
+//		char[] findChar = find.toCharArray();
+//
+//		for (int i = 0; i < messageChar.length; i++) {
+//
+//			for (int j = 0; j < findChar.length; j++) {
+//
+//				if (messageChar[i] == findChar[j]) {
+//					count++;					
+//				}
+//				j++;
+//			}	
+//		}
+		
+		for (int i = 0; i <= message.length() - find.length(); i++) {
+			if (message.substring(i,  i + find.length()).contentEquals(find)) {
+				count++;
+			}			
+		}
+
+//		count /= findChar.length;
+		System.out.println( "The word \"" + find + "\" occurs " + count + " times");
+		
+		
+
+	}
+
+	public static void findAndReplace(String find, String replace, String message) {
+
+		String[] splited = message.split("\\s+");
+
+		for (int i = 0; i < splited.length; i++) {
+
+			if(splited[i].equals(find)) {
+				splited[i] = replace;
+			}
+
+			System.out.print(splited[i] + " ");
+		}
+
+	}
+
+	public static void findAndReplaceChar(String find, String replace, String message) {
+
+		for (int i = 0; i <= message.length() - find.length(); i++) {
+			if (message.substring(i,  i + find.length()).contentEquals(find)) {
+				String beforeReplace = message.substring(0, i);
+				String afterReplace = message.substring(i + find.length(), message.length());
+				message = beforeReplace + replace + afterReplace;
+			}			
+		}
+
+		System.out.println(message);
+	}
+
+	public static void main(String[] args) {
+
+		String message = "I am going goinggoing to London";
+		String find = "going";
+		String replace = "***";
+
+		//		English.printOne(message);
+		//		English.find(find, message);
+		//		English.findAndReplace(find, replace, message);
+		English.findChar(find, message);
+		English.findAndReplaceChar(find, replace, message);
+
+	}
+
+}

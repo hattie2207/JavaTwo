@@ -1,0 +1,29 @@
+package guiTask;
+
+import java.awt.*;
+
+public class GUIMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f = new Frame("QA Learning Academy");
+		Button b1 = new Button("Click 1");
+//		Button b2 = new Button("Click 2");
+//		Button b3 = new Button("Click 3");
+//		Button b4 = new Button("Click 4");
+//		Button b5 = new Button("Click 5");
+		f.add(b1, BorderLayout.NORTH);
+//		f.add(b2, BorderLayout.SOUTH);
+//		f.add(b3, BorderLayout.CENTER);
+//		f.add(b4, BorderLayout.WEST);
+		
+		TextField t1 = new TextField();
+		f.add(t1, BorderLayout.SOUTH)
+		
+		EventHandler e = new EventHandler();
+		b1.addActionListener(e);
+		f.setSize(400, 400);
+		f.setVisible(true);
+	}
+
+}
