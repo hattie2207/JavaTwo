@@ -1,0 +1,16 @@
+package splitString;
+
+public class English {
+	
+	public void printOne(String message) {
+		
+		String[] splited = str.split("\\s+");
+		
+		System.out.println(message);
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package splitString;
+
+import java.util.Collections;
+
+public class English {
+	
+	public static void printOne(String message) {
+		
+		String[] splited = message.split("\\s+");
+		
+		Collections.reverseOrder(splited);
+		
+		for (int i = 0; i < splited.length; i++) {
+			
+			System.out.println(splited[i]);
+			
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		English.printOne("I am going to London");
+		
+	}
+
+}

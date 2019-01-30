@@ -1,0 +1,22 @@
+package splitString;
+
+public class English {
+	
+	public static void printOne(String message) {
+		
+		String[] splited = message.split("\\s+");
+		
+		for (int i = 0; i < splited; i++) {
+			
+		}
+		
+		System.out.println(splited);
+	}
+	
+	public static void main(String[] args) {
+		
+		English.printOne("I am going to London");
+		
+	}
+
+}

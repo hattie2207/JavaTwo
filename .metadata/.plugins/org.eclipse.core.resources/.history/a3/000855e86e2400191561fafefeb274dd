@@ -1,0 +1,14 @@
+package splitString;
+
+public class English {
+	
+	public void printOne(String message) {
+		
+		System.out.println(message);
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
