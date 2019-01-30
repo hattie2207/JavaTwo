@@ -12,3 +12,5 @@
 1548841199627	Rename package 'splitString'
 1548861914060	Delete element
 1548861926282	Move compilation unit
+1548866631114	Rename package 'addGUI'
+1548866646635	Rename type 'AddMain'
