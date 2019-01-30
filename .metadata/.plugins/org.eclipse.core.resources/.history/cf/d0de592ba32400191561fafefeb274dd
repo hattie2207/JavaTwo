@@ -1,0 +1,31 @@
+package guiTask;
+
+import java.awt.*;
+
+public class AddMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f = new Frame();
+		TextField t1 = new TextField(10);
+		TextField t2 = new TextField(10);
+		TextField t3 = new TextField(10);
+		Label l1 = new Label("First Number:");
+		Label l2 = new Label("Second Number:");
+		Label l3 = new Label("+");
+		Label l4 = new Label("Result:");
+		Button b1 = new Button("=");
+		FlowLayout f1 = new FlowLayout();
+		f.setLayout(f1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		f.add(l1);
+		
+	}
+
+}

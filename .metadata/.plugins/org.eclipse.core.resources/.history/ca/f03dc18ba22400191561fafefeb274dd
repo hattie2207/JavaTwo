@@ -1,0 +1,10 @@
+package guiTask;
+
+public class AddMain {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

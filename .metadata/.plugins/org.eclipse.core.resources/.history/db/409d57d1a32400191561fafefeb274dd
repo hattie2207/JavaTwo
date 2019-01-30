@@ -1,0 +1,18 @@
+package addGUI;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class EventHandler implements ActionListener{
+	
+	public EventHandler(TextField t1, TextField t2, TextField t3) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

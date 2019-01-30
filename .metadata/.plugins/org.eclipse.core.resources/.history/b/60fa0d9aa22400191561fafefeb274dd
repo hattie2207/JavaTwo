@@ -1,0 +1,13 @@
+package guiTask;
+
+import java.awt.*;
+
+public class AddMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f = new Frame();
+		
+	}
+
+}
