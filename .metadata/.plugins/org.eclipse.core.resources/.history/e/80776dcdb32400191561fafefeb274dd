@@ -1,0 +1,51 @@
+package calculatorTwo;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class calculatorMain {
+	
+	public static void main(String[] args) {
+		
+		Frame f1 = new Frame();
+		GridLayout g1 = new GridLayout(4, 1);
+		Button b1 = new Button("+");
+		Button b2 = new Button("-");
+		Button b3 = new Button("x");
+		Button b4 = new Button("/");
+		
+		b1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				Frame f2 = new Frame("Addition");
+				GridLayout g2 = new GridLayout(4, 2);
+				Label l1 = new Label("First Number :");
+				Label l2 = new Label("Second Number :");
+				Label l3 = new Label("Result :");
+				Button b5 = new Button("Add");
+				TextField t1 = new TextField(10);
+				TextField t2 = new TextField(10);
+				TextField t3 = new TextField(10);
+				
+				f2.setLayout(g2);
+				f2.add(l1);
+				
+			}
+		});
+		
+		f1.setLayout(g1);
+		f1.add(b1);
+		f1.add(b2);
+		f1.add(b3);
+		f1.add(b4);
+		f1.setSize(400, 400);
+		f1.setVisible(true);
+		
+		
+		
+	}
+	
+
+}
