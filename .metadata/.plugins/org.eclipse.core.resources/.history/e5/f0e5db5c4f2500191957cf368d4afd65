@@ -1,0 +1,20 @@
+package exceptionTask;
+
+public class exceptionMain {
+	
+	public static void main(String[] args) {
+		
+		int c = 0;
+		
+		try {
+			c = 4/0;			
+			System.out.println("Done");
+			
+		}catch(ArithmeticException e) {
+			System.out.println("Error Message: " +e.getMessage());
+		}
+		
+		
+	}
+
+}

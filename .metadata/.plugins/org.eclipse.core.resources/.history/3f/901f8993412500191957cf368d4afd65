@@ -18,7 +18,6 @@ public class Calculator extends Frame {
 		l1 = new Label("First Number :");
 		l2 = new Label("Second Number :");
 		l3 = new Label();
-		
 		l4 = new Label("Result :");
 		b1 = new Button();
 		g1 = new GridLayout(4,2);

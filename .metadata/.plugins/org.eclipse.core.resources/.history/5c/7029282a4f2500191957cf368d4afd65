@@ -1,0 +1,16 @@
+package exceptionTask;
+
+public class exceptionMain {
+	
+	public static void main(String[] args) {
+		
+		int c = 0;
+		
+		try {
+			c = 4/0;
+		}
+		
+		
+	}
+
+}
