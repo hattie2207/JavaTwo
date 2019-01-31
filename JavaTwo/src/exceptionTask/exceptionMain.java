@@ -12,12 +12,14 @@ public class exceptionMain {
 			
 		}catch(ArithmeticException e) {
 			System.out.println("Error Message: " +e.getMessage());
+			e.printStackTrace();
 			
 			//if Exception is before ArithmeticException then ArithmeticException become unreachable catch block 
 			//as situation is already handled by catch block for Exception
 			
 		}catch(Exception e) {
 			System.out.println("Error Message: " +e.getMessage());
+			e.printStackTrace();			
 		}	
 		
 	}

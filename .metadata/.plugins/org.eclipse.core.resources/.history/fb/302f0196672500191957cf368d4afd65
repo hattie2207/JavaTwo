@@ -1,0 +1,59 @@
+package calculatorFour;
+
+import java.awt.*;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+
+		Frame f = new Frame();
+		Panel p1 = new Panel();
+		Panel p2 = new Panel();
+		TextField t1 = new TextField();
+		Button b0 = new Button("0");
+		Button b1 = new Button("1");
+		Button b2 = new Button("2");
+		Button b3 = new Button("3");
+		Button b4 = new Button("4");
+		Button b5 = new Button("5");
+		Button b6 = new Button("6");
+		Button b7 = new Button("7");
+		Button b8 = new Button("8");
+		Button b9 = new Button("9");
+		Button bAdd = new Button("+");
+		Button bSub = new Button("-");
+		Button bMul = new Button("x");
+		Button bDiv = new Button("/");
+		Button bEqual = new Button("=");
+		Button bClear = new Button("c");		
+		
+		GridLayout g1 = new GridLayout(4, 4);
+		p2.setLayout(g1);
+		p2.add(b7);
+		p2.add(b8);
+		p2.add(b9);
+		p2.add(bAdd);
+		p2.add(b4);
+		p2.add(b5);
+		p2.add(b6);
+		p2.add(bSub);
+		p2.add(b1);
+		p2.add(b2);
+		p2.add(b3);
+		p2.add(bMul);
+		p2.add(b0);
+		p2.add(bClear);
+		p2.add(bEqual);
+		p2.add(bDiv);
+		
+		p1.add(t1);
+		f.add(p1, BorderLayout.NORTH);
+		f.add(p2, BorderLayout.CENTER);
+//		f.setSize(400, 400);
+		f.setVisible(true);
+		
+	}
+
+
+
+}

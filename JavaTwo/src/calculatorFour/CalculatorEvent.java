@@ -1,0 +1,55 @@
+package calculatorFour;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class CalculatorEvent implements ActionListener{
+
+	TextField t2;
+	String operator;
+	int num1, num2, result; 	
+	OperatorEvent o1; 
+
+	public CalculatorEvent(TextField t2, OperatorEvent o1) {
+
+		this.t2 = t2;
+		this.o1 = o1;
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+		this.num1 = o1.num1;		
+		this.operator = o1.operator;
+		num2 = Integer.parseInt(t2.getText());
+
+		try {
+			switch(operator) {
+
+			case "+":
+				result = num1 + num2;
+				break;
+			case "-":
+				result = num1 - num2;
+				break;
+			case "x":
+				result = num1 * num2;
+				break;
+			case "/":
+				result = num1 / num2;
+				break;
+			}
+
+			t2.setText(String.valueOf(result));	
+			
+		}catch(Exception error) {
+			
+			t2.setText("Error Message: " + error.getMessage());
+
+		}
+
+
+	}	
+
+}

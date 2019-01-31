@@ -1,0 +1,43 @@
+package calculatorFour;
+
+import java.awt.*;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+
+		Frame f = new Frame();
+		Panel p1 = new Panel();
+		Panel p2 = new Panel();
+		TextField t1 = new TextField();
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		Button b0 = new Button("0");
+		
+		
+		GridLayout g1 = new GridLayout(4, 4);
+		p2.setLayout(g1);
+		
+		f.add(p1, BorderLayout.NORTH);
+		f.add(p1, BorderLayout.CENTER);
+		
+		f.setVisible(true);
+		
+	}
+
+
+
+}

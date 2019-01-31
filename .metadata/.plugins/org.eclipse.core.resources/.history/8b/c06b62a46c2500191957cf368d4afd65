@@ -1,0 +1,13 @@
+package calculatorFour;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class CalculatorEvent extends OperatorEvent implements ActionListener{
+
+	public CalculatorEvent(TextField t1) {
+		super(t1);
+		// TODO Auto-generated constructor stub
+	}	
+
+}

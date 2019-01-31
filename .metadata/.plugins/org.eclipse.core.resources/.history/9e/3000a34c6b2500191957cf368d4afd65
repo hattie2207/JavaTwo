@@ -1,0 +1,22 @@
+package calculatorFour;
+
+import java.awt.TextField;
+import java.awt.event.*;
+
+public class CalculatorEvent implements ActionListener{
+
+	TextField t1;
+
+	public CalculatorEvent(TextField t1) {
+
+		this.t1 = t1;
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package calculatorFour;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class CalculatorEvent implements ActionListener{
+	
+	TextField t2;
+	String operator;
+	int num2; 	
+	OperatorEvent o1; 
+	
+	public CalculatorEvent(TextField t2, OperatorEvent o1) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}	
+
+}

@@ -1,0 +1,28 @@
+package calculatorFour;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class CalculatorEvent implements ActionListener{
+
+	TextField t1;
+	String operator;
+	int num1; 	
+
+	public CalculatorEvent(TextField t1) {
+
+		this.t1 = t1;
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		Button btn = (Button) e.getSource();
+		num1 = Integer.parseInt(t1.getText());
+		operator = btn.getLabel();
+		t1.setText("");
+
+	}
+
+}
