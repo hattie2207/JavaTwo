@@ -1,0 +1,28 @@
+package calculatorThree;
+
+import java.awt.*;
+
+public class CalculatorMain {	
+
+	public static void main(String[] args) {
+		
+		Frame f1 = new Frame();
+		GridLayout g1 = new GridLayout(4, 1);
+		Button b1 = new Button("+");
+		Button b2 = new Button("-");
+		Button b3 = new Button("x");
+		Button b4 = new Button("/");
+		
+		f1.setLayout(g1);
+		f1.add(b1);
+		f1.add(b2);
+		f1.add(b3);
+		f1.add(b4);
+		f1.setSize(400, 400);
+		f1.setVisible(true);
+
+		Calculator calc = new Calculator();
+		calc.setOperation("Addition");
+	}
+	
+}

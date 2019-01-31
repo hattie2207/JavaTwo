@@ -3,7 +3,7 @@ package calculatorTwo;
 import java.awt.*;
 import java.awt.event.*;
 
-public class calculatorMain {
+public class CalculatorMain {
 
 	public static void main(String[] args) {
 

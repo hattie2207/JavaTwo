@@ -1,0 +1,20 @@
+package calculatorThree;
+
+import java.awt.*;
+
+public class CalculatorMain {	
+
+	public static void main(String[] args) {
+		
+		Frame f1 = new Frame();
+		GridLayout g1 = new GridLayout(4, 1);
+		Button b1 = new Button("+");
+		Button b2 = new Button("-");
+		Button b3 = new Button("x");
+		Button b4 = new Button("/");
+
+		Calculator calc = new Calculator();
+		calc.setOperation("Addition");
+	}
+	
+}

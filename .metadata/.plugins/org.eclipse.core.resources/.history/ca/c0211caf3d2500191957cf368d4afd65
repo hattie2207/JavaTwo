@@ -1,0 +1,11 @@
+package calculatorThree;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+
+		Calculator calc = new Calculator();
+		calc.setOperation("Addition");
+	}
+	
+}
