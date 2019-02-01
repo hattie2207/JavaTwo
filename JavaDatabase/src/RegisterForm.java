@@ -96,8 +96,4 @@ public class RegisterForm {
 		f.setVisible(true);
 		
 	}
-
-
-
-
 }
