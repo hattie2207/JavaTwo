@@ -1,7 +1,0 @@
-package calculatorFour;
-
-import java.awt.event.*;
-
-public class CalculatorEvent implements ActionListener{
-
-}

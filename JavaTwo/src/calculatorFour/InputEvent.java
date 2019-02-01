@@ -6,7 +6,7 @@ import java.awt.event.*;
 public class InputEvent implements ActionListener {
 
 	TextField t1;
-	int num1; 
+	boolean pressed;
 
 	public InputEvent(TextField t1) {
 
@@ -18,7 +18,8 @@ public class InputEvent implements ActionListener {
 
 		Button btn = (Button) e.getSource();		
 		String text = t1.getText();		
-		t1.setText(text + btn.getLabel());		
+		t1.setText(text + btn.getLabel());	
+		pressed = true;
 
 	}
 }

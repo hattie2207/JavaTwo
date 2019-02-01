@@ -1,8 +1,0 @@
-package calculatorFour;
-
-public class CalculatorMain {
-	
-	Frame f = new Frame();
-	
-
-}

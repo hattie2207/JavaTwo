@@ -1,8 +1,0 @@
-package calculatorThree;
-
-public class Calculator Extends Frame {
-	
-	TextField t1,t2,t3;
-	
-
-}

@@ -67,7 +67,7 @@ public class CalculatorMain {
 		b8.addActionListener(i1);
 		b9.addActionListener(i1);		
 		
-		OperatorEvent o1 = new OperatorEvent(t1);
+		OperatorEvent o1 = new OperatorEvent(t1, i1);
 		bAdd.addActionListener(o1);
 		bSub.addActionListener(o1);
 		bMul.addActionListener(o1);
