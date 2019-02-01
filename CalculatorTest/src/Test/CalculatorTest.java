@@ -10,7 +10,7 @@ public class CalculatorTest {
 	private Object ArithmeticException;
 	
 	@Before
-	public void setup() {
+	private void setup() {
 		
 		calc = new Calculator();
 		
@@ -65,10 +65,24 @@ public class CalculatorTest {
 		
 	}
 	
-	@Test(expected=java.lang.ArithmeticException.class)
+	@Test
 	public void calculatorTest8() {		
 		
+		Assert.assertEquals(2, calc.division(5,2));		
+		
+	}
+	
+	@Test(expected=java.lang.ArithmeticException.class)
+	public void calculatorTest9() {		
+		
 		Assert.assertEquals(ArithmeticException, calc.division(10,0));		
+		
+	}
+	
+	@Test
+	public void calculatorTest10() {		
+		
+		Assert.assertEquals(0, calc.multiplication(3,0));		
 		
 	}
 
