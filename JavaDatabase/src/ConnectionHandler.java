@@ -8,7 +8,14 @@ public class ConnectionHandler {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/qac", "root", "");
 			Statement stmt = conn.createStatement();
-			stmt.executeUpdate("insert into school values(2, 'Tom', 40)");
+//			stmt.executeUpdate("INSERT INTO school VALUES(2, 'Tom', 40)");
+			ResultSet rec = stmt.executeQuery("SELECT * FROM school");
+			while(rec.next()) {
+				System.out.println(rec.getInt(1));
+				System.out.println(rec.getString(2));
+				System.out.println(rec.getInt(3));
+			}
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
